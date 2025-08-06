@@ -18,7 +18,7 @@ export const sendEmail = async (mail,subject = detail.subject,text= detail.text 
 
 
     const mailOptions = {
-        from: nodemailer_mail, 
+        from: `"Abdullah Jawed" <${nodemailer_mail}>`, 
         to: mail,
         subject: subject,
         text: text,
