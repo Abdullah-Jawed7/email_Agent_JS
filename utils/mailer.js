@@ -14,6 +14,7 @@ const detail = {
     text:`We were warm welcoming you in our Beneficiary Management System`,
 }
 export const sendEmail = async (mail,subject = detail.subject,text= detail.text )  => {
+    console.log("sending...")
     const transporter =  nodemailer.createTransport(emailConfig);
 
 

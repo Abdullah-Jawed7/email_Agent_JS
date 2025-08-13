@@ -4,7 +4,27 @@ import {Triage_Agent} from "./customAgents.js"
 dotenv.config()
 
 async function main() {
-   const result = await runner.run(Triage_Agent, "I am Abdullah ,want to send email to my friend Zainulabedin at:zainulabedin@example.com , asking him is about hows his preparation are oing for upcoming Saylani Hackathon , and asking him to provide some tips and help me so i can prepare also and asking him is he want to become partner for this hackathon  .");
+   const prompt = "I am Abdullah, want to send email to my friend Khalid at: khalidjawed23@gmail.com , Telling him about my new AI Agent that can write email according to instructions and send it to respective email that mentioned in instructions, telling benefits and uses of this AI agent , Asking him to share ideas to create more creative AI agents and use them more productive"
+   const result = await runner.run(Triage_Agent,  prompt);
    console.log(result.finalOutput)
 }
 main()
+
+
+
+
+
+
+
+
+
+
+
+                              `I am Abdullah, want to send email to my friend
+                               Khalid at: khalid@example.com , Telling him about
+                               my new AI Agent that can write email according
+                               to instructions and send it to respective email
+                               that mentioned in instructions, telling benefits
+                               and uses of this AI agent , Asking him to share 
+                               ideas to create more creative AI agents and use 
+                               them more productive`
